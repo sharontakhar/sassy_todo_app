@@ -1,0 +1,117 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background-image: linear-gradient(120deg , #FFC0CB ,#ff1493);
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+header , p, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 16px;
+    
+}
+
+form input , form button{
+    border: none;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+form button{
+    color: #000000;
+    cursor: pointer;
+    transition:all 0.5sec  ease ;
+}
+
+.fa-trash, .fa-check-square{
+    pointer-events: none;
+}
+
+form button:hover{
+color : white;
+}
+
+.Todo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ToDo_list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.list-div{
+    margin: 0.5rem;
+    display: flex;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease 0.5s;
+}
+
+.list-div li{
+    flex: 1;
+}
+.trash-todo , .finish-todo{    
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: none;
+    
+}
+
+.finish-todo i , .trash-todo i{
+    color: white;
+}
+.finish-todo{
+    background-color:#aef03c;
+}
+
+.trash-todo{
+    background-color:#f03c42;
+}
+.list-item li{
+background-color: white;
+}
+
+.list-item{
+    padding: 0rem 0.5rem;
+}
+
+.complete{
+    text-decoration: line-through;
+    opacity: 0.5;
+    height: 48px;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+/* 
+ul.congrat {
+   display: flex;
+   flex-wrap: wrap; 
+   text-decoration: none;
+} */
